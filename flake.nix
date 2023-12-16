@@ -30,6 +30,10 @@
             type = "app";
             program = "${self.defaultPackage.${system}}/bin/helloworld-server";
           };
+          client = {
+            type = "app";
+            program = "${self.defaultPackage.${system}}/bin/helloworld-client";
+          };
         };
       });
 }
