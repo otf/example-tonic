@@ -35,5 +35,11 @@
             program = "${self.defaultPackage.${system}}/bin/helloworld-client";
           };
         };
+        checks = {
+          system-test = pkgs.nixosTest (import ./tests {
+            inherit pkgs;
+            package = self.defaultPackage.${system};
+          });
+        };
       });
 }
