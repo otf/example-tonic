@@ -12,7 +12,7 @@ jobs:
         with:
           extra_nix_config: |
             system-features = nixos-test kvm
-      - name: CHeck flakes
+      - name: Check flakes
         run: nix --print-build-logs --verbose flake check
       - name: Building package
         run: nix build
