@@ -11,7 +11,7 @@ jobs:
       - uses: cachix/install-nix-action@v22
         with:
           extra_nix_config: |
-            system-features = nixos-test
+            system-features = nixos-test kvm
       - name: CHeck flakes
         run: nix --print-build-logs --verbose flake check
       - name: Building package
