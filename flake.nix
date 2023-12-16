@@ -42,7 +42,7 @@
         checks = {
           system-test = pkgs.nixosTest (import ./tests {
             inherit pkgs;
-            package = self.defaultPackage.${system};
+            package = self.packages.${system}.default;
           });
         };
       });
