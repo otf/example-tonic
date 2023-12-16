@@ -1,0 +1,11 @@
+== run a server
+[source,bash]
+----
+$ nix run .#server
+----
+
+== run a client
+[source,bash]
+----
+$ nix run .#client
+----
