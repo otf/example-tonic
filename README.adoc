@@ -1,3 +1,9 @@
+== to test with VMs.
+[source,bash]
+----
+$ nix flake check
+----
+
 == run a server
 [source,bash]
 ----
