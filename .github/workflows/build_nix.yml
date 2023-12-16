@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: cachix/install-nix-action@v22
       - name: CHeck flakes
-        run: nix --print--build-logs --verbose flake check
+        run: nix --print-build-logs --verbose flake check
       - name: Building package
         run: nix build
