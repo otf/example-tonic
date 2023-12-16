@@ -18,6 +18,6 @@ jobs:
           authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
       - uses: DeterminateSystems/magic-nix-cache-action@v2
       - name: Check flakes
-        run: nix --print-build-logs --verbose flake check
+        run: nix flake check
       - name: Building package
         run: nix build
