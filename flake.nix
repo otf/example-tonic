@@ -25,6 +25,7 @@
             buildInputs = [
               cargo rustc rustfmt pre-commit rustPackages.clippy
               protobuf grpcurl
+              rust-analyzer
             ];
             RUST_SRC_PATH = rustPlatform.rustLibSrc;
           };
